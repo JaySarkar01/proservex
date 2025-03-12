@@ -3,7 +3,7 @@ import ServicesGrid from "@/app/components/ServicesGrid";
 import ServiceCarousel from "@/app/components/ServiceCarousel";
 import Footer from "@/app/components/footer";
 
-export default function Home() {
+export default function Beauty() {
   
   return(
     <div>
