@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-import { FaStar, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md"; // Left & Right Icons
 const mostitem = [
   {
@@ -150,7 +150,7 @@ const woCares = [
 
 export default function ServiceCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
+  // const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
   const itemsPerView = 4; // Change based on your layout
 
   const nextSlide = () => {

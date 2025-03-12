@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { FaSearch, FaShoppingCart, FaUser, FaMapMarkerAlt, FaUber } from "react-icons/fa";
+import { FaSearch,FaMapMarkerAlt} from "react-icons/fa";
 
 const placeholders = ["AC service", "Facial", "Kitchen cleaning"];
 
@@ -55,12 +55,12 @@ const Navbar = () => {
 <div className="hidden md:flex items-center justify-between px-6 py-5">
   {/* Left: Logo & Links */}
   <div className="flex items-center space-x-8 lg:space-x-16">
-    <a href="/">
-      <h1 className="text-2xl lg:text-3xl font-bold cursor-default">
-        <span>ProServe</span>
-        <span className="text-orange-600">X</span>
-      </h1>
-    </a>
+  <Link href="/" className="cursor-default">
+  <h1 className="text-2xl lg:text-3xl font-bold">
+    <span>ProServe</span>
+    <span className="text-orange-600">X</span>
+  </h1>
+</Link>
     {/* Hide these links on tablets (they are in the upper bar) */}
     <div className="hidden lg:flex space-x-16">
       <Link href="/beauty" className="hover:text-gray-600 text-xl">Beauty</Link>

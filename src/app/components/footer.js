@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Aurora from "@/app/components/aurabg";
+// import Aurora from "@/app/components/aurabg";
 import { FaTwitter, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
