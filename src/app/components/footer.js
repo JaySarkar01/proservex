@@ -105,7 +105,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className="text-center text-gray-500 text-sm">
+      <div className="text-center text-gray-500 text-sm pb-5 md:pb-0">
         <span>
           © 2024 ProServeX Company. All rights reserved. | created with ❤️ by jay sarkar
         </span>

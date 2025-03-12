@@ -115,13 +115,13 @@ const Navbar = () => {
 </div>
 
       {/* Mobile Navbar */}
-      <div className="md:hidden fixed inset-x-0 bottom-0 bg-white border-t shadow-md py-3">
+      <div className="md:hidden fixed inset-x-0 bottom-0 bg-white border-t shadow-md py-1">
         {/* Top Section */}
-        <div className="fixed top-0 inset-x-0 bg-white shadow-md px-4 py-2">
+        <div className="fixed top-0 inset-x-0 bg-white shadow-md px-4 py-1">
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-lg font-bold">Connaught Place</h1>
-              <button className="mt-1 px-3 py-1 bg-gray-200 rounded">Locations Name</button>
+              <button className="mt-1 text-sm px-3 py-1 bg-gray-200 rounded">Locations Name</button>
             </div>
             <Image
     src="/icons/icons8-cart-96 (1).png" // Path to your shopping cart icon
@@ -136,7 +136,7 @@ const Navbar = () => {
           <div className="mt-2">
             <motion.input 
               type="text" 
-              className="w-full px-3 py-2 border rounded-md"
+              className="w-full px-2 py-1 mb-2 border rounded-md border-gray-400"
               placeholder={`Search for '${typedText}|'`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -146,8 +146,10 @@ const Navbar = () => {
         </div>
 
         {/* Bottom Navigation */}
-        <div className="flex justify-around py-3">
+        <div className="flex justify-around py-2">
+        <Link href="/" className="cursor-default">
           <h1 className="text-sm font-bold"><span>P</span><span className="text-orange-600">X</span></h1>
+          </Link>
           <Link href="/beauty" className="text-sm">Beauty</Link>
           <Link href="/panels" className="text-sm">Panels</Link>
           <Link href="/native" className="text-sm">Native</Link>
