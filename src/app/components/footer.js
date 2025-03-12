@@ -107,7 +107,7 @@ const Footer = () => {
       {/* Copyright Section */}
       <div className="text-center text-gray-500 text-sm">
         <span>
-          © 2024 ProServeX Company. All rights reserved. | CIN: U74140DL2014PTC276780
+          © 2024 ProServeX Company. All rights reserved. | created with ❤️ by jay sarkar
         </span>
       </div>
     </div>
