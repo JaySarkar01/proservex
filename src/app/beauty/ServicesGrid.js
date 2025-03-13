@@ -5,12 +5,12 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const services = [
-  { name: "Women's Salon & Spa", img: "/pngs/massage.png", link: "/services/women-salon" },
-  { name: "Men's Salon & Massage", img: "/pngs/hairstylist.png", link: "/services/men-salon" },
-  { name: "AC & Appliance Repair", img: "/pngs/service.png", link: "/services/ac-repair" },
-  { name: "Cleaning & Pest Control", img: "/pngs/vacuum.png", link: "/services/cleaning" },
-  { name: "Electrician, Plumber & Carpenter", img: "/pngs/technician.png", link: "/services/electrician" },
-  { name: "Native Water Purifier", img: "/pngs/water-filter.png", link: "/services/water-purifier" },
+  { name: "Salon Prime", img: "/women_care/salon-prime.webp", link: "/services/women-salon" },
+  { name: "Spa for Women", img: "/women_care/spa-for-women.webp", link: "/services/men-salon" },
+  { name: "Hair Studio for Women", img: "/women_care/hair-studio.webp", link: "/services/ac-repair" },
+  { name: "Makeup & Styling Studio", img: "/women_care/makeup.webp", link: "/services/cleaning" },
+  { name: "Salon Prime", img: "/women_care/salon-prime-men.webp", link: "/services/electrician" },
+  { name: "Massage for Men", img: "/women_care/massag-for-man.webp", link: "/services/water-purifier" },
 ];
 
 const mainservices = [
@@ -22,11 +22,11 @@ export default function ServicesGrid() {
   const router = useRouter();
 
   return (
-    <div className="px-6 pb-6 md:px-16 gap-8 flex flex-col lg:flex-row items-center md:items-start justify-around min-h-screen bg-gray-50">
+    <div className="px-6 md:px-16 gap-8 flex flex-col lg:flex-row items-center md:items-start justify-evenly lg:pb-16 bg-gray-50">
       {/* Left Section */}
       <div className="flex flex-col w-full lg:w-1/2 space-y-8">
         <SplitText
-          text="Bringing Quality Services to Your Home!"
+          text="Beauty services at your doorstep!"
           className="font-bold text-3xl md:text-5xl text-center leading-relaxed md:leading-normal"
           delay={100}
           animationFrom={{ opacity: 0, transform: 'translateY(56px)' }}
@@ -36,7 +36,7 @@ export default function ServicesGrid() {
 
         <div className="max-w-3xl p-6 bg-white border border-gray-200 rounded-xl shadow-md">
           <h2 className="text-lg md:text-2xl text-gray-700 font-semibold mb-6 text-center md:text-start">
-            Looking for something specific?
+          What are you looking for?
           </h2>
 
           {/* Services Grid */}
@@ -44,7 +44,7 @@ export default function ServicesGrid() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-gray-100 p-1 pr-4 gap-2 rounded-lg flex flex-col items-center transition hover:shadow-md cursor-pointer"
+                className="bg-gray-100 p-4 rounded-lg flex flex-col items-center transition hover:shadow-md cursor-pointer"
                 onClick={() => router.push(service.link)}
               >
                 <Image src={service.img} alt={service.name} width={70} height={70} className="rounded" />
@@ -98,7 +98,7 @@ export default function ServicesGrid() {
       {/* Right Section - Image (Visible only on larger screens) */}
       <div className="hidden md:flex items-center justify-center w-full lg:w-1/2 mt-20">
         <TiltedCard
-          imageSrc="/1696837841529-a061b6.webp"
+          imageSrc="/women_care/main-banner-beauty.webp"
           altText="ProServeX Banner"
           captionText="ProServeX"
           containerHeight="auto"

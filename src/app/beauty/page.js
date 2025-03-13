@@ -1,6 +1,6 @@
 "use client"
-import ServicesGrid from "@/app/components/ServicesGrid";
-import ServiceCarousel from "@/app/components/ServiceCarousel";
+import ServicesGrid from "./ServicesGrid";
+import ServiceCarousel from "./ServiceCarousel";
 import Footer from "@/app/components/footer";
 
 export default function Beauty() {

@@ -194,6 +194,8 @@ const Page = () => {
     </Swiper>
   </div>
 </div>
+
+
 {/* Banner Section */}
 <div className="w-full flex justify-center">
         {/* Mobile Banner */}
