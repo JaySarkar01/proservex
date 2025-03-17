@@ -167,7 +167,7 @@ export default function Page(){
   {/*bottom Section */}
   <div className="w-full max-w-8xl mx-auto py-8 px-2 md:px-4">
     <h2 className="text-2xl md:text-3xl font-bold text-start mb-4 md:mb-6">
-    Future-Ready Functions
+    Future is Ready
     </h2>
     <Swiper
      ref={swiperRef1}
@@ -179,7 +179,6 @@ export default function Page(){
         768: { slidesPerView: 3 }, // 3 on tablets
         1024: { slidesPerView: 4 }, // 4 on large screens
       }}
-    
       pagination={{ clickable: true }}
       autoplay={{ delay: 3000, disableOnInteraction: false }}
       loop

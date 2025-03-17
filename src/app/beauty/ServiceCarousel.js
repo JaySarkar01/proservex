@@ -183,7 +183,7 @@ const banner = [
   { img: "/women_care/b5.webp" },
 ];
 
-const ServiceCarousel = () => {
+export default function ServiceCarousel(){
   const swiperRef = useRef(null);
   const swiperRef1 = useRef(null);
   return (
@@ -597,4 +597,3 @@ const ServiceCarousel = () => {
   );
 };
 
-export default ServiceCarousel;
