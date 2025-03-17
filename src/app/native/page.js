@@ -25,7 +25,7 @@ const FeaturesAi = [
     { name: "6-way unlock", img: "/native/L6.webp" },
   ];
 
-const Page = () => {
+export default function Page(){
   const swiperRef = useRef(null);
   const swiperRef1 = useRef(null);
   const [hovered, setHovered] = useState(null);
@@ -280,4 +280,3 @@ const Page = () => {
   );
 };
 
-export default Page;
