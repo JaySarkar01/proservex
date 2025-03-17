@@ -33,7 +33,9 @@ const imageGroups = {
 };
 
 export default function Carousel() {
+  const swiperRef = useRef(null);
   return (
+    
     <div className="pt-0">
        <div className="mx-auto px-6 lg:px-28 items-start justify-start md:pt-8 lg:ml-41 lg:mr-41 mb-8 pt-28">
         <div className="w-full flex justify-center">
@@ -90,7 +92,7 @@ export default function Carousel() {
 
       <div className="w-full px-4 md:px-10 lg:px-20 py-0 pb-0">
       {Object.entries(imageGroups).map(([title, images], sectionIndex) => {
-        const swiperRef = useRef(null);
+        
 
         return (
           <div key={sectionIndex} className="w-full px-6 md:px-14 lg:px-24 py-8 relative">
