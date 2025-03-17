@@ -22,9 +22,9 @@ export default function ServicesGrid() {
   const router = useRouter();
 
   return (
-    <div className="px-6 md:px-16 gap-8 flex flex-col lg:flex-row items-center md:items-start justify-evenly lg:pb-16 bg-gray-50">
+    <div className="px-6 md:px-16 gap-8 flex flex-col lg:flex-row items-center md:items-start justify-center lg:pb-16 bg-gray-50">
       {/* Left Section */}
-      <div className="flex flex-col w-full lg:w-1/2 space-y-8">
+      <div className="flex flex-col w-full lg:w-1/2 space-y-8 justify-end">
         <SplitText
           text="Beauty services at your doorstep!"
           className="font-bold text-3xl md:text-5xl text-center leading-relaxed md:leading-normal"
@@ -34,7 +34,7 @@ export default function ServicesGrid() {
           easing="easeOutCubic"
         />
 
-        <div className="max-w-3xl p-6 bg-white border border-gray-200 rounded-xl shadow-md">
+        <div className="max-w-3xl p-6 bg-white border border-gray-200 rounded-xl shadow-md justify-end">
           <h2 className="text-lg md:text-2xl text-gray-700 font-semibold mb-6 text-center md:text-start">
           What are you looking for?
           </h2>
@@ -54,7 +54,7 @@ export default function ServicesGrid() {
           </div>
 
           {/* Main Services Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6 justify-start">
             {mainservices.map((main, index) => (
               <div
                 key={index}
